@@ -1,14 +1,14 @@
 /* CSS for google results page project*/
 
 body{
-	font-family: arial, sans-serif;
+	font-family: 'Roboto',arial,sans-serif;
 	margin: 0;
 }
 
-#header{
+.header{
 	position: relative;
 	width: 100%;
-	height: 64px;
+	height: 66px;
 	top: 0;
 	background-color: #fafafa;
 
@@ -38,7 +38,7 @@ body{
 .search{
     width: 630px;
     height: 40px;
-    margin: 22px 12px;
+    margin: 19px 12px 22px;
     border:	solid 1px #d2d2d2;
     box-shadow: 1px 1px 1px #d2d2d2;
     outline: none;
@@ -73,20 +73,163 @@ body{
 	padding: 0 12px;
 }
 
-#navigation-bar{
-	height: 58px;
+.navigation-bar{
+	height: 56px;
 	width: 100%;
 	background-color: #fafafa;
 	padding: 0;
-	position: absolute;
+	position: relative;
 	display: block;
 	border-bottom: 1px solid #ebebeb;
-	z-index: -1;
+/*	z-index: -1; */
+	font-size: 13px;
+}
+
+div.navigation-bar a, div.navigation-bar input{
+	margin-top: 22px;
+
+}
+
+div.navigation-bar a{
+	height: 15px;
+	padding: 28px 15px 13px;
+	text-decoration: none;
+	color: #000;
+	opacity: .75;
+}
+
+div.navigation-bar a:hover{
+	opacity: .95;
 }
 
 #all{
-	height: 15px;
-	padding: 28px 16px 12px;
 	margin-left: 150px;
+	border-bottom: 3px solid #4285f4;
+	color: #4285f4;
+	font-weight: bold;
+} 
+ 
+#settings{
+	margin-left: 75px;
+}
+
+div.navigation-bar input{
+	background-color: #fafafa;
+	border: 1px solid #fafafa;
+	color: #000;
+	opacity: .75;
+	padding: 4px 15px;
+}
+
+div.navigation-bar input:hover{
+	border: 1px solid #c6c6c6;
+}
+
+#amount-of-results{
+	line-height: 20px;
+	position: relative;
+	top: 0;
+	color: #808080;
+	display: block;
+	font-size: small;
+	margin-left: 165px;
+}
+
+.result{
+/*	border: 1px solid black; */
+	margin-left: 165px;
+	width: 600px;
+	margin-top: 22px;
+}
+
+a.result-heading{
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 1.2;
+	color: #1a0dab;
+}
+
+a.result-heading:hover{
+	text-decoration: underline;
+}
+
+p.result-address{
+	font-size: 14px;
+	color: #006621;
+	line-height: 16px;
+	margin: 0;
+}
+
+p.result-summary{
+	line-height: 1.4;
+	word-wrap: break-word;
+	color: #545454;
+	font-size: small;
+	margin: 0;
+}
+
+a.result-bottom-links{
+	display: inline;
+	color: #1a0dab;
+	line-height: 18px;
+	font-size: small;
+	text-decoration: none;
+
+}
+
+a.result-bottom-links:hover{
+	text-decoration: underline;
+}
+
+.top-stories{
+	/*border: 1px solid black;*/
+	width: 650px;
+	margin-left: 150px;
+}
+
+.top-stories h3{
+	margin-left: 15px;
+	font-size: 18px;
+	color: #222;
+	font-weight: normal;
+}
+
+.top-stories img{
+	width: 205px;
+	height: 115px;
+	display: block;
+}
+
+.top-stories-heading{
+	display: inline-block;
+	vertical-align: middle;
+	color: #1a0dab;
+	font-size: 16px;
+	line-height: 22px;
+	text-decoration: none;
+	padding: 15px 15px 0 15px;
+}
+
+.top-result{
+	height: 260px;
+	width: 205px;
+	display: inline-block;
 	border: 1px solid black;
+	vertical-align: middle;
+
+}
+
+.top-stories-address{
+	color: #006621;
+	font-size: 13px;
+	line-height: 20px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.top-stories-when{
+	font-size: 13px;
+	line-height: 20px;
+	display: inline-block;
+	vertical-align: middle;
 }
